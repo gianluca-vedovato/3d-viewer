@@ -1,0 +1,27 @@
+{
+  "name": "configurator",
+  "version": "0.0.0",
+  "files": ["dist"],
+  "main": "./dist/3d-viewer.umd.js",
+  "module": "./dist/3d-viewer.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/3d-viewer.es.js",
+      "require": "./dist/3d-viewer.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.2",
+    "vite": "^2.6.4"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "three": "^0.133.1",
+    "three-stdlib": "^2.5.5"
+  }
+}
